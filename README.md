@@ -2,8 +2,22 @@
 ## Módulo 01 - Semana 04
 
 Eu desenvolvi um site para a elaboração dos 10 exercícios referentes a essa semana. <br>
-Você pode acessar a página dos exercícios e suas conclusões
-<a href="https://georgeenriquebravo.github.io/DEVinHouse-Modulo01-Semana02
+Todos os exercícios desta semana são para um único projeto. <br>
+
+---
+
+# Projeto Conta Bancária
+### Este é um projeto de onboard para o desenvolvimento de um sistema de conta bancária para pessoa física. <br>
+
+Nessa primeira versão será contemplado:
+
+- Cadastro de clientes
+- Depósitos
+- Saques
+- Consulta de saldo
+
+Você pode acessar a página desse meu projeto
+<a href="https://georgeenriquebravo.github.io/DEVinHouse-Modulo01-Semana04
 /" target="_blank">
     clicando aqui
 </a>
