@@ -7,7 +7,7 @@ Todos os exercícios desta semana são para um único projeto. <br>
 ---
 
 # Projeto Conta Bancária <img width="50px" alt="💰" src="./imagens/logoBankBW.png"/>
-### Este é um projeto de onboard para o desenvolvimento de um sistema de conta bancária para pessoa física. <br>
+### Este é um projeto onboard para o desenvolvimento de um sistema de conta bancária para pessoa física. <br>
 
 Nessa primeira versão será contemplado:
 
