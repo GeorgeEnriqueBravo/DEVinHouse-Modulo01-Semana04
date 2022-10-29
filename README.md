@@ -3,7 +3,7 @@
 
 Eu desenvolvi um site para a elaboração dos 10 exercícios referentes a essa semana. <br>
 Você pode acessar a página dos exercícios e suas conclusões
-<a href="https://georgeenriquebravo.github.io/DEVinHouse-Modulo01-Semana02
+<a href="https://georgeenriquebravo.github.io/DEVinHouse-Modulo01-Semana04
 /" target="_blank">
     clicando aqui
 </a>
