@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVinHouse Philips Bank</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <div class="bordaTopBot"></div>
+    <header>
+        <img id="logoBanco" src="./imagens/logoBankBW.png">
+        <h1>DevInBank</h1>
+        <img id="logoBanco" src="./imagens/logoBankBW.png">
+    </header>
+
+    <main>
+        <form id="form">
+            <p>
+                Nome: 
+                <input type="text" name="nome" id="nome" required>
+            </p>
+            <p>
+                CPF: 
+                <input type="text" name="cpf" id="cpf" required>
+            </p>
+            <p>
+                Celular: 
+                <input type="number" name="cel" id="cel" required>
+            </p>
+            <p>
+                Senha: 
+                <input type="password" name="senha" id="senha" required>
+            </p>
+            <p>
+                Confirmação de Senha: 
+                <input type="password" name="confirmaSenha" id="confirmaSenha" required>
+            </p>
+            <p>
+                <button id="cadastrar" type="submit">Cadastrar</button>
+                <button type="reset">Limpar Dados</button>
+                <!-- <input id="cadastrarInput" type="submit" value="Cadastrar Input"> 
+                <input id="limpar" type="reset" value="Limpar Dados"> -->
+            </p>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div id="contato">
+            <p>Contato: (13) 9999-9999</p>
+        </div>
+        <div id="redesSociais">
+            <a href="http://web.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <img class="redeSocial" src="./imagens/whatsapp-logo.png" alt="Whatsapp">
+            </a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="redeSocial" src="./imagens/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img class="redeSocial" src="./imagens/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img class="redeSocial" src="./imagens/twitter-logo.png" alt="Twitter">
+            </a>
+        </div>
+
+
+        <!-- <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a> -->
+    </footer>
+    <div class="bordaTopBot"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
