@@ -18,7 +18,7 @@
     </header>
 
     <main>
-        <form id="form">
+        <form id="formCadastro">
             <p>
                 Nome: 
                 <input type="text" name="nome" id="nome" required>
@@ -44,14 +44,36 @@
                 <button type="reset">Limpar Dados</button>
                 <!-- <input id="cadastrarInput" type="submit" value="Cadastrar Input"> 
                 <input id="limpar" type="reset" value="Limpar Dados"> -->
+            </p>  
+        </form>
+        <form id="formOperacoes">
+            <p>
+                <input type="radio" name="operacao" id="saque"><label for="saque">Saque</label>
+                <input type="radio" name="operacao" id="deposito"><label for="deposito">Depósito</label>
+                <input type="radio" name="operacao" id="consulta"><label for="consulta">Consulta</label>
             </p>
-            
+            <p>
+                Valor:
+                <input type="number" name="valor" id="valor">
+            </p>
+            <p>
+                Conta: 
+                <input type="number" name="conta" id="conta">
+            </p>
+            <p>
+                Senha: 
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Limpar</button>
+            </p>
         </form>
     </main>
 
     <footer>
         <div id="contato">
-            <p>Contato: (13) 9999-9999</p>
+            <p><strong>Contato: (13) 9999-9999</strong></p>
         </div>
         <div id="redesSociais">
             <a href="http://web.whatsapp.com" target="_blank" rel="noopener noreferrer">
