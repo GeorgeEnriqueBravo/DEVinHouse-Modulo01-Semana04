@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiH - M1S04 - Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a51d99d0c.js" crossorigin="anonymous"></script>
+    <script src="./scripts/toaster.js" async type="module"></script>
+    <script src="./scripts/input-masks.js" async type="module"></script>
+    <script src="./scripts/form-cadastro-validations.js" async type="module"></script>
+    <script src="./scripts/seletor-servicos.js" async type="module"></script>
+    <script src="./scripts/nova-conta.js" async type="module"></script>
+    <script src="./scripts/form-servicos-validations.js" async type="module"></script>
+    <script src="./scripts/servicos.js" async type="module"></script>
+</head>
+<body>
+    <header class="block-centered">
+        <img src="./images/logo.svg" alt="">
+
+        <div class="logo-as-text">
+            <h1><span>devin</span><span>bank</span></h1>
+        </div>
+    </header>
+
+    <main class="block-centered">
+        <form id="form-cadastro">
+            <div class="input-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" required> 
+            </div>
+            
+            <div class="input-group">
+                <label for="cpf">CPF</label>
+                <input id="form-input-cpf" type="text" name="cpf" maxlength="14" required> 
+            </div>   
+
+            <div class="input-group">
+                <label for="phone">Celular</label>
+                <input id="form-input-phone" type="tel" name="phone" maxlength="15" required> 
+            </div>   
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" required> 
+            </div>   
+
+            <div class="input-group">
+                <label for="confirm-password">Confirmar senha</label>
+                <input id="confirm-password" type="password" name="confirm-password" required> 
+            </div> 
+
+            <button id="form-cadastro-reset-button" class="reset" type="reset">Limpar campos</button>
+
+            <div id="submit-area">
+                <button id="cadastro-submit" type="submit" disabled>Enviar</button>
+                <p id="submit-area-messenger"></p>
+            </div>            
+            
+            <div id="toast" class="hidden"></div>
+        </form>
+
+        <form id="form-servicos">            
+            <button id="voltar-btn" class="hidden-by-opacity" type="button">voltar</button>
+
+            <div id="form-servicos-select">
+                <div id="servicos-saque" class="input-group radio">               
+                    <input type="radio" name="option" value="1">   
+                    <label class="operations-label" for="option">Saque</label>        
+                </div>
+
+                <div id="servicos-deposito" class="input-group radio">
+                    <input type="radio" name="option" value="2"> 
+                    <label class="operations-label" for="option">Depósito</label>                          
+                </div>
+
+                <div id="servicos-saldo" class="input-group radio">
+                    <input type="radio" name="option" value="3">   
+                    <label class="operations-label" for="option">Consulta Saldo</label>                        
+                </div>
+            </div>
+
+            <div id="form-servicos-content" class="fade-up">
+                <div id="form-servicos-input-valor-area" class="input-group">
+                    <label for="amount">Valor</label>
+                    <input id="form-servicos-input-valor" type="text" name="amount">
+                </div>
+
+                <div class="input-group">
+                    <label for="account">Conta</label>
+                    <input id="form-servicos-input-conta" type="text" name="account">
+                </div>
+
+                <div id="form-servicos-input-senha-area" class="input-group">
+                    <label for="password">Senha</label>
+                    <input id="form-servicos-input-senha" type="password" name="password">
+                </div>
+
+                <button id="form-servicos-reset-btn" class="reset" type="reset">Limpar campos</button>
+
+                <div>
+                    <button id="form-servicos-submit-btn" type="submit" disabled>Enviar</button>
+                    <p></p>
+                </div>   
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="block-centered content">        
+            <div class="footer-infos">               
+                <div>
+                    <div class="logo-as-text">
+                        <h1><span>devin</span><span>bank</span></h1>
+                    </div>
+
+                    <div class="footer-socials">
+                        <ul>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                        </ul>                     
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>sac@devinbank.com.br</li>
+                        <li>+55 (51) 3333-3333</li>
+                    </ul>
+                </div>
+
+                <img src="./images/logo.svg" alt="">
+            </div>
+
+            <div class="footer-rights">
+                <h4>DEVINBANK: Controle financeiro de Dev para Dev</h4>
+                <h4>&copy; 2022 Todos os direitos reservados.</h4>
+            </div>
+ 
+        </div>
+    </footer>
+
+
+</body>
+</html>

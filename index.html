@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVinHouse Philips Bank</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./imagens/logoBankBW.png">
 </head>
 
 <body>
@@ -54,18 +54,18 @@
             </p>
             <p>
                 Valor:
-                <input type="number" name="valor" id="valor">
+                <input type="number" name="valor" id="valor" required>
             </p>
             <p>
                 Conta: 
-                <input type="number" name="conta" id="conta">
+                <input type="number" name="conta" id="conta" required>
             </p>
             <p>
                 Senha: 
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </p>
             <p>
-                <button type="submit">Confirmar</button>
+                <button id="confirmar" type="submit">Confirmar</button>
                 <button type="reset">Limpar</button>
             </p>
         </form>

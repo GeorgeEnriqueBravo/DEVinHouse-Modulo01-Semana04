@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 80px;
+    --header-border-bottom-width: 1px;
+    --footer-height: 300px;
+    --footer-rights-height: 60px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    height: var(--header-height);
+    padding: 10px 20px;
+    display: flex;     
+    z-index: 1;  
+    border-bottom: 1px solid transparent;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(var(--header-height) - var(--header-border-bottom-width)) ;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border-bottom: var(--header-border-bottom-width) solid gainsboro;
+    z-index: -1;
+}
+
+header img {
+    margin-right: 20px;
+}
+
+.logo-as-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-as-text h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.logo-as-text h1 span:first-child {
+    color: #008080;
+}
+
+.logo-as-text h1 span:last-child {
+    color: #ff6600;
+    font-weight: 200;
+    font-size: 2.4rem;
+}
+
+.block-centered {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    /* min-height: calc(100vh - var(--header-height) - 200px); */
+    min-height: calc(100vh - var(--header-height));
+    /* border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro; */
+    padding: 20px;
+    padding-bottom: calc(var(--footer-height) + 20px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    height: var(--footer-height);
+    width: 100%;
+    background-color: #3b312a;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+}
+
+footer .block-centered {
+    padding: 0 20px;
+}
+
+.footer-rights {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.footer-rights::before {
+    content: '';
+    background-color: #2e2621;
+    z-index: -1;
+}
+
+.footer-rights, .footer-rights::before {
+    height: var(--footer-rights-height);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-rights h4 {
+    font-weight: 500;
+    font-size: .7rem;
+    color: #008080;
+    padding: 0 20px;
+}
+
+.footer-rights h4:first-child {
+    text-transform: uppercase;
+    border-right: 1px solid #008080;
+}
+
+footer .content {
+    height: 100%;
+}
+
+.footer-infos {
+    height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-infos::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: calc(22% - 20px);
+    width: 50%;
+    border-right: 1px solid #2e2621;
+}
+
+.footer-infos::after {
+    content: '';
+    position: absolute;
+    bottom: calc(var(--footer-rights-height) + 20px);
+    right: 0;
+    height: calc(22% - 20px);
+    width: 50%;
+    border-left: 1px solid #2e2621;
+}
+
+.footer-infos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-infos .logo-as-text {
+    scale: .7;
+}
+
+.footer-socials {
+    padding: 20px 0;
+}
+
+.footer-socials ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-socials ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6600;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 110%;
+    color: #2e2621;
+    cursor: pointer;
+}
+
+.footer-socials ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.footer-infos img {
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - (var(--footer-rights-height) / 2)));
+    z-index: 2;
+}
+
+footer .contact {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+footer .contact h4 {
+    text-transform: uppercase;
+    font-weight: 400;    
+}
+
+footer .contact ul {
+    list-style: none;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+footer .contact ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* FORM STYLES: */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+#form-cadastro {
+    justify-content: unset;
+}
+
+form .input-group {
+    position: relative;
+}
+
+form .input-group input {    
+    border: 1px solid gainsboro;
+    padding: 10px;
+    width: 250px;
+}
+
+form .input-group:not(:last-child), form .reset {
+    margin-bottom: 20px;
+}
+
+form .input-group label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: .9rem;
+}
+
+form button {
+    background-color: #ff6600;
+    border: none;
+    padding: 12px;
+    width: 250px;
+    display: block;
+    color: white;
+}
+
+form button[disabled] {
+    background-color: #8d8d8d;    
+}
+
+form button[disabled]:hover {
+    cursor: not-allowed;
+    background-color: #8d8d8d;  
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #008080;
+}
+
+form button.reset {
+    background-color: #3b312a;
+}
+
+form button.reset:hover {
+    background-color: firebrick;
+}
+
+#submit-area {
+    position: relative;
+}
+
+#submit-area p {
+    color: red;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: .9rem;
+}
+
+#toast {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    z-index: 2;
+}
+
+#toast::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+#toast div {
+    font-size: .9rem;
+    position: absolute;
+    color: white;
+    padding: 20px 50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.success {
+    background-color: green;
+}
+
+.warning {
+    background-color: firebrick;
+}
+
+.info {
+    background-color: #3b312a;
+}
+
+.info hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #ff6600;
+}
+
+.hidden {
+    display: none;
+}
+
+.semibold {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#form-servicos {
+    justify-content: flex-start;
+}
+
+#form-servicos input[type='radio'] {
+    width: unset;
+    display: none;
+}
+
+#form-servicos .radio {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    transition: 400ms;
+    transition-property: height;
+}
+
+#form-servicos .radio label {
+    position: static;
+    border: 1px solid #ff6600;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#form-servicos .radio label:hover {
+    background-color: #008080;
+    color: white;
+}
+
+#form-servicos .radio label.selected-option {
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    color: white;
+}
+
+#form-servicos .fade-up {
+    height: 0;
+    transition: 400ms;
+    margin: 0;
+    padding: 0;
+}
+
+#voltar-btn {
+    background-color: #008080;
+    margin-bottom: 10px;
+    height: 40px;
+    transition: 200ms;
+    transition-property: opacity;
+    overflow: hidden;
+}
+
+#voltar-btn.hidden-by-opacity {
+    cursor: unset;
+}
+
+.hidden-by-opacity {
+    opacity: 0;
+    transition: 500ms;
+}
+
+#form-servicos-content {
+    overflow: hidden;
+    padding-top: 5px;
+    height: 275px;
+    transition: 400ms;
+    transition-property: height;
+}
+
+#form-servicos .input-group:not(.fade-up) {
+    margin-bottom: 20px;
+}
+
+#form-servicos-select {
+    width: 100%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevInBank</title>
+    <link rel="stylesheet" href="./exProf.css" />
+    <script src="./exProf.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://logosmarcas.net/wp-content/uploads/2021/03/Deutsche-Bank-Logo.png"
+        alt="Logo Bank"
+        height="50px"
+      />
+      <h1>DevInBank</h1>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <h2>Formulário de Cadastro</h2>
+
+        <form id="form" class="form">
+          <div>
+            <label for="nome">Nome:</label>
+            <input required id="nome" />
+          </div>
+
+          <div>
+            <label for="cpf">CPF:</label>
+            <input required id="cpf" />
+          </div>
+
+          <div>
+            <label for="celular">Celular:</label>
+            <input required type="number" id="celular" />
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <input required id="senha" />
+          </div>
+
+          <div>
+            <label for="confirmacao">Confirmação senha:</label>
+            <input required id="confirmacao" />
+          </div>
+
+          <div>
+            <button type="reset" class="button">Limpar</button>
+            <button type="submit" class="button">Cadastrar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section">
+        <h2>Ações</h2>
+
+        <form id="form-acoes" class="form">
+          <div>
+            <label for="operacao">Operacão:</label>
+            <select id="operacao" required>
+              <option value="SAQUE">Saque</option>
+              <option value="DEPOSITO">Depósito</option>
+              <option value="SALDO">Consulta Saldo</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="valor">Valor:</label>
+            <input id="valor" type="number" required />
+          </div>
+
+          <div>
+            <label for="conta">Conta:</label>
+            <input id="conta" type="number" required />
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <input id="senha" required />
+          </div>
+
+          <div>
+            <button type="reset" class="button">Limpar</button>
+            <button type="submit" class="button">Confirmar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>DevInBank</p>
+      <p>Rua Teste 123 - São Paulo</p>
+    </footer>
+  </body>
+</html>
